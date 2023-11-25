@@ -1,6 +1,6 @@
 const assert = require("assert");
 const { EventEmitter } = require("events");
-const ee = newEventEmitter();
+const ee = new EventEmitter();
 let count = 0;
 setInterval(() => {
   ee.emit("tick");
